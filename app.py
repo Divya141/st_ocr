@@ -10,7 +10,7 @@ st.text("Upload the image")
 uploaded_file = st.sidebar.file_uploader("Chose an image:", type=["jpg","png","jpeg"])
 if uploaded_file is not None:
   img=Image.open(uploaded_file)
-  st.image(img, caption='Uploaded Image'.use_column_width=True)
+  st.image(img, caption='Uploaded Image',use_column_width=True)
   st.write("")
   if st.button("PREDICT"):
     st.write("Result:")
