@@ -6,7 +6,7 @@ from PIL import Image #python imaging libraries to open images
 import numpy as np
 st.title("Optical character recognition")
 st.text("Upload the image")
-uploaded_file=st.sidebar.fileuploader("Chose an image:",type=["jpg","png","jpeg"])
+uploaded_file=st.sidebar.fileuploader("Chose an image:",type=["jpg","png","jpeg"]) 
 if uploaded_file is not None:
   img=Image.open(uploaded_file)
   st.write("")
