@@ -3,6 +3,7 @@ import cv2
 import pytesseract
 from PIL import Image #python imaging libraries to open images
 import numpy as np
+pytesseract.pytesseract.tesseract_cmd="/app/.apt/usr/bin/tesseract"
 st.title("Optical character recognition")
 st.text("Upload the image")
 uploaded_file=st.sidebar.file_uploader("Chose an image:",type=["jpg","png","jpeg"])
